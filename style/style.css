@@ -1,0 +1,2054 @@
+@font-face {
+    font-family: 'Montserrat-SemiBold', 'Montserrat-Light', 'Montserrat-Medium', 'Montserrat-Bold', 'Lora-Regular' sans-serif;
+    src: url(../fonts/Montserrat.ttf) format('truetype');
+    src: url(../fonts/Montserrat-SemiBold.ttf) format('truetype');
+    src: url(../fonts/Montserrat-Medium.ttf) format('truetype');
+    src: url(../fonts/Montserrat-Bold.ttf) format('truetype');
+    src: url(../fonts/Lora-Regular.ttf) format('truetype');
+    src: url(../fonts/Montserrat-Light.ttf) format('truetype');
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.hidden {
+    display: none;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body {
+    overflow-x: hidden;
+}
+h1 {
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 60px;
+    color: white;
+}
+h3 {
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+p {
+    font-family: 'Lora-Regular', serif;
+    line-height: 2em;
+}
+.top_header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(83, 83, 83);
+    margin: 0px;
+    padding: 0px;
+}
+.left_div_header {
+    display: flex;
+    width: 280px;
+    height: 60px;
+}
+.header_logo img {
+    width: 160px;
+    height: 60px;
+    object-fit: cover;
+}
+.select_glint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 60px;
+    background-color: rgb(56, 56, 56);
+    color: rgb(160, 160, 160);
+}
+.select_glint a {
+    color: rgb(160, 160, 160);
+}
+.view_head_div {
+    display: flex;
+    align-items: flex-end;
+    width: 300px;
+    height: 60px;
+}
+.view_a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.4px solid rgb(117, 117, 117);
+    width: 60px;
+    height: 60px;
+}
+.view_a:hover {
+    background-color: rgb(37, 37, 37);
+}
+.welcome_window {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/fon.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.bottom_header {
+    position: relative;
+    height: 96px;
+    background-color: transparent;
+}
+.glint_img {
+    width: 120px;
+    height: 70px;
+    object-fit: cover;
+    position: absolute;
+    color: antiquewhite;
+    left: 20px;
+    top: 20px;
+}
+.welcome_decor_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1100px;
+    height: 764px;
+    color: rgb(139, 139, 139);
+    font-family: 'Montserrat-Medium', sans-serif;
+    margin-left: 17%;
+}
+.welcome_decor_text h1 {
+    width: 720px;
+    height: 300px;
+}
+.welcome_decor_text p {
+    font-family: 'Montserrat-Medium', sans-serif;
+}
+.button_div {
+    width: 500px;
+    display: flex;
+    padding: 60px 0;
+}
+.hero_btn {
+    width: 200px;
+    height: 50px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    margin-right: 30px;
+}
+.hero_btn:hover {
+    background-color: white;
+    color: black;
+    transition: 0.4s linear;
+}
+.nav_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+    color: green;
+    height: auto;
+    position: fixed;
+    left: 92%;
+    bottom: 85%;
+    z-index: 99;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s linear;
+    font-family: 'Montserrat-Medium', sans-serif;
+}
+.nav_arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    left: 95%;
+    bottom: 30px;
+    z-index: 999;
+}
+.menu_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100px;
+    height: 250px;
+    position: relative;
+    left: 91%;
+    bottom: 60%;
+}
+.menu_contact span {
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    transform: scale(10);
+    right: -30px;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #39b54a;
+}
+.about_title h1 {
+    font-size: 78px;
+}
+.about_title h3 {
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+.about_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    margin-top: 80px;
+}
+.line {
+    width: 450px;
+    height: 1px;
+    border: 1px solid #58ce67;
+    margin: 35px;
+}
+.about_info {
+    display: flex;
+    justify-content: center;
+    width: 55%;
+    height: 200px;
+    text-align: center;
+    height: 250px;
+}
+.about_info p {
+    height: 250px;
+    font-size: 24px;
+}
+.about_numerate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+}
+.numerate h5 {
+    font-size: 18px;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+}
+.numerate h1 {
+    font-size: 90px;
+}
+.numerate {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 200px;
+    text-align: center;
+}
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 1200px;
+}
+.service_title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+}
+.service_title h1 {
+    width: 920px;
+    margin: 30px;
+    color: black;
+    font-size: 52px;
+}
+.service_title h3 {
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+hr {
+    width: 50%;
+    border: none;
+    background-color: rgb(196, 196, 196);
+    height: 1px;
+    position: absolute;
+    left: 25%;
+}
+.service_info {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 840px;
+    align-items: center;
+}
+.service_info h2 {
+    font-family: 'Montserrat-Medium', sans-serif;
+}
+.icon_job {
+    width: 90px;
+    height: 200px;
+}
+.text_job {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 540px;
+    height: 170px;
+}
+.text_job h2 {
+    font-size: 30px;
+}
+.text_job p {
+    font-size: 17px;
+    color: rgb(92, 92, 92);
+    line-height: 1.6em;
+}
+.job_offer {
+    display: flex;
+    width: 550px;
+    height: 250px;
+}
+.photo_div {
+    width: 100%;
+    height: 2500px;
+    position: relative;
+    z-index: 1;
+}
+.photo {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 1800px;
+    top: 400px;
+}
+.photo_title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 700px;
+    background-color: rgb(20, 20, 20);
+}
+.photo_title h3 {
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+.title_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 150px;
+}
+.title_text h1 {
+    font-size: 52px;
+    width: 800px;
+    height: 150px;
+}
+.img_collage {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 1780px;
+    position: relative;
+}
+.img_collage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.8s ease;
+}
+.collage {
+    width: 550px;
+    height: 550px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.collage:hover .window_black {
+    opacity: 1;
+}
+.collage_big:hover .window_black {
+    opacity: 1;
+}
+.collage_big:hover img, .collage:hover img {
+    transform: scale(1.2);
+}
+.collage_big {
+    width: 550px;
+    height: 680px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.window_black {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease;
+}
+.window_black svg {
+    fill: #fff;
+    height: 20px;
+}
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.plus {
+    align-self: center;
+}
+.client_div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 1100px;
+    background-color: rgb(224, 224, 224);
+}
+.client_title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+}
+.client_title h1 {
+    font-size: 52px;
+    width: 900px;
+    height: 120px;
+    color: black;
+}
+.client_title h3 {
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+.client_logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.logo {
+    /* display: flex;
+    justify-content: space-around; */
+    width: 70%;
+    height: 150px;
+}
+.client_info {
+    text-align: center;
+    width: 920px !important;
+}
+.client_info p {
+    font-size: 25px;
+}
+.client_name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 110px;
+    height: 90px; */
+}
+.client_name h4 {
+    font-family: 'Montserrat-SemiBold', sans-serif;
+}
+.client_name p {
+    font-size: 14px;
+    font-family: 'Montserrat-Light', sans-serif;
+}
+.client_img {
+    border-radius: 50%;
+    width: 100px;
+}
+.svg_outline {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 20px;
+    position: absolute;
+    top: 100px;
+    left: 15%;
+    z-index: 50;
+}
+.contact_us {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1300px;
+    background-image: url(../img/kolonki.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title_us {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    margin: 40px 0px 30px 0px;
+}
+.title_us h1 {
+    width: 1000px;
+}
+.email_form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 800px;
+}
+.email_blank {
+    display: flex;
+    align-items: flex-start;
+    width: 1000px;
+    height: 1000px;
+}
+.send_message {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 650px;
+    height: 700px;
+    background-color: #1a1a1a8a;
+}
+.send_message h3 {
+    font-family: 'Montserrat-Medium', sans-serif;
+}
+.contact_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 700px;
+    background-color: rgb(19, 19, 19);
+}
+.center_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 200px;
+    height: 600px;
+}
+.center_text h3 {
+    font-family: 'Montserrat-Medium', sans-serif;
+    color: white;
+}
+.contact_info h5 {
+    color: rgb(2, 165, 2);
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 16px;
+}
+.contact_info p {
+    color: gray;
+    font-size: 15px;
+}
+.email_icon {
+    display: flex;
+    justify-content: space-evenly;
+    width: 170px;
+    height: 50px;
+    margin-right: 50px
+}
+input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 15px;
+    padding: 1em 0;
+    font-size: 1em;
+}
+.input_blank {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: 400px;
+}
+.title_h {
+    display: flex;
+    justify-content: flex-start;
+    width: 600px;
+    height: 30px;
+}
+.submit_button {
+    display: flex;
+    width: 600px;
+    height: 50px;
+}
+.submit_button a {
+    font-family: 'Montserrat-Medium', sans-serif;
+}
+.email_submit {
+    width: 600px;
+    height: 50px;
+    border: none;
+    background-color: #39b54a;
+    color: white;
+    font-size: 15px;
+}
+.email_submit:hover {
+    transition: 0.5s linear;
+    background-color: green;
+}
+textarea {
+    padding: 1em 0;
+    font-size: 1em;
+    width: 600px;
+    height: 150px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+label {
+    color: #575757;
+}
+footer {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(19, 19, 19);
+}
+.footer_img {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+}
+.footer_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 490px;
+    height: 210px;
+}
+.footer_text p {
+    font-family: 'Montserrat-Light', sans-serif;
+    width: 390px;
+    height: 170px;
+    color: #575757;
+    font-size: 15px;
+}
+.footer_text h3 {
+    color: white;
+}
+.footer_titry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+}
+.button_mail {
+    display: flex;
+    width: 500px;
+    height: 60px;
+}
+.footer_button {
+    width: 140px;
+    height: 57px;
+    background-color: green;
+    border: none;
+    text-align: center;
+}
+.input_footer {
+    display: flex;
+    justify-content: flex-end;
+    width: 270px;
+    background-color: #0e0e0e;
+    background-image: url(../img/mail.png);
+    background-position: 10px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+}
+.input_footer input {
+    border: none;
+    color: #fff;
+    background-color: #0e0e0e;
+}
+
+.input_footer input::after {
+    content: "Email Address";
+    font-size: 15px;
+    clear: both;
+    color: white;
+}
+.copyright {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+}
+.drop {
+    width: 1px;
+    height: 17px;
+    background-color: #3d3d3d;
+}
+.copy_text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    height: 100px;
+}
+.copy_text a {
+    text-decoration: none;
+}
+.copy_text p {
+    font-family: 'Montserra-Light', sans-serif;
+    font-size: 14px;
+    color: #575757;
+}
+.copy_a {
+    color: #fff;
+}
+.menu_block {
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    right: -270px;
+    width: 270px;
+    height: 100vh;
+    background-color: #141414;
+    z-index: 100;
+}
+.menu_center_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    height: 70%;
+    margin-top: 30px;
+}
+.menu_center_block h3 {
+    color: #ffffff;
+}
+.menu_center_block p {
+    color: #3d3d3d;
+}
+.menu_block_link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 200px;
+    height: 288px;
+}
+.menu_block_link a {
+    text-decoration: none;
+}
+.menu_block_text {
+    display: flex;
+    width: 200px;
+    height: 100px;
+}
+.menu_block_text p {
+    font-size: 14px;
+}
+.menu_block_icon {
+    display: flex;
+    justify-content: space-evenly;
+    width: 150px;
+    height: 40px;
+}
+.center_obj {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 200px;
+    height: 450px;
+}
+.text_a {
+    text-decoration: none;
+    color: rgb(122, 122, 122);
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 200px;
+    height: 120px;
+}
+.text p {
+    font-family: 'Lora-Regular', sans-serif;
+    margin: 0 0 30px;
+    font-weight: 100;
+}
+.close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: #0a0a0a;
+    cursor: pointer;
+    position: absolute;
+    right: 1px;
+}
+.text_nav {
+    color: green;
+    position: absolute;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 200px;
+    height: 20px;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+}
+.navigation h3 {
+    color: green;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-size: 11px;
+}
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border: 5px solid #000000;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    pointer-events: none;
+}
+.block_num {
+    width: 200px;
+    height: 125px;
+}
+.logo_icon {
+    height: 110px !important;
+    fill: #575757;  
+
+}
+.outline_icon[hidden] {
+    height: 40px;
+    display: none;
+    cursor: pointer;
+}
+.line_block {
+    height: 150px;
+    width: 1px;
+    background-color: #58ce67;
+}
+.line_ {
+    width: 540px;
+    height: 1px;
+    background-color: #a1a1a15b;
+    margin: 50px 0;
+}
+
+
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 0;
+}
+.slick-dots button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 0;
+}
+.slick-dots li{
+    list-style: none;
+}
+.slick-dots li::after {
+    content: '';
+    display: block;
+    background-color: #959595;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    margin: 9px;
+    cursor: pointer;
+}
+.slick-active::after {
+    background-color: green !important;
+}
+.client_review_item {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content !important;
+}
+.client_review {
+    width: 100%;
+}
+.review_block {
+    position: relative;
+    width: 100%;
+}
+.prev_slick_button, .next_slick_button{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:1024px) and (min-width:900px) {
+    .nav_menu {
+        left: 86%;
+        font-size: 13px;
+    }
+    .welcome_decor_text {
+        margin: 0 0 0 80px;
+    }
+    .menu_contact {
+        left: 86%;
+    }
+    .nav_arrow {
+        left: 91%;
+    }
+    .numerate {
+        width: 500px;
+        height: 400px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .about {
+        height: 1100px;
+    }
+    .about_info p {
+        font-size: 22px;
+        width: 800px;
+    }
+    .welcome_decor_text h1 {
+        font-size: 55px;
+    }
+    .about_title h1 {
+        font-size: 78px;
+    }
+    .service_title h1 {
+        width: 750px;
+        font-size: 44px;
+    }
+    .job_offer {
+        width: 480px;
+        height: 260px;
+    }
+    .service_info {
+        width: 900px;
+        height: 850px;
+    }
+    .photo_title h1 {
+        font-size: 44px;
+    }
+    .glint_img {
+        width: 80px;
+        height: 80px;
+    }
+    .button_div {
+        font-size: 12px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    .text_job {
+        width: 480px;
+        height: 250px;
+        text-align: left;
+        justify-content: space-around;
+    }
+    .text_job p {
+        font-size: 1.1em;
+        width: 320px;
+        height: 190px;
+    }
+    .about {
+        justify-content: space-evenly;
+    }
+    .photo {
+        width: 900px;
+        height: 1700px;
+    }
+    .img_collage {
+        width: 450px;
+        height: 1700px;
+    }
+    .collage {
+        width: 450px;
+        height: 450px;
+    }
+    .collage_big {
+        width: 450px;
+        height: 640px;
+    }
+    .photo_div {
+        display: flex;
+        justify-content: center;
+        height: 2100px;
+    }
+    .client_title h1 {
+        width: 750px;
+        font-size: 44px;
+    }
+    .logo_icon {
+        height: 90px;
+    }
+    .client_info p {
+        width: 550px;
+        font-size: 20px;
+    }
+    .client_info {
+        height: 370px;
+    }
+    .outline_icon {
+        height: 30px;
+    }
+    .client_name {
+        width: 100px;
+        height: auto;
+        align-items: center;
+    }
+    .client_name p {
+        font-size: 15px;
+    }
+    .client_img {
+        width: 80px;
+        height: auto;
+    }
+    .title_us h1 {
+        width: 800px;
+        font-size: 44px;
+    }
+    .title_us {
+        height: 200px 0px;
+        margin: 0;
+    }
+    .email_blank h3 {
+        font-size: 13px;
+    }
+    .email_blank {
+        width: 900px;
+        height: 700px;
+    }
+    .contact_info {
+        width: 300px;
+        height: 700px;
+    }
+    .send_message {
+        width: 600px;
+        height: 700px;
+    }
+    .center_text {
+        width: 180px;
+        height: 550px;
+    }
+    .email_icon {
+        width: 180px;
+    }
+    .email_submit {
+        width: 550px;
+    }
+    .input_blank,
+    textarea {
+        width: 550px;
+    }
+    .title_h {
+        width: 550px;
+    }
+    .contact_us {
+        height: 1200px;
+    }
+    .footer_text {
+        width: 450px;
+        height: 240px;
+    }
+    .footer_text p {
+        line-height: 2.2em;
+        width: 370px;
+    }
+    .footer_button {
+        height: 60px;
+    }
+    .footer_titry {
+        justify-content: space-evenly;
+    }
+    .center_obj {
+        justify-content: space-between;
+    }
+    .menu_block_text {
+        height: 200px;
+    }
+    .menu_block_link {
+        margin: 10px 0 30px;
+    }
+    .menu_center_block {
+        height: 650px;
+    }
+    .line_block:nth-of-type(4) {
+        display: none;
+    }
+    .title_text h1{
+        width: 750px;
+    }
+}
+@media screen and (max-width:1000px) and (min-width:768px) {
+    .nav_menu {
+        left: 82%;
+        top: -4%;
+    }
+    .center_obj {
+        justify-content: space-between;
+    }
+    .nav_arrow {
+        left: 88%;
+        bottom: 2%;
+    }
+    .glint_img {
+        width: 90px;
+        height: 60px;
+    }
+    .welcome_decor_text {
+        margin: 0 0 0 130px;
+        width: 600px;
+    }
+    .welcome_decor_text h1 {
+        font-size: 44px;
+        width: 530px;
+        height: 250px;
+    }
+    .menu_contact {
+        width: 50px;
+        align-items: flex-end;
+        left: 86%;
+        bottom: 66%;
+    }
+    .about_title h1 {
+        font-size: 65px;
+    }
+    .about {
+        height: 1100px;
+    }
+    .about_info p {
+        width: 500px;
+        height: 270px;
+        font-size: 20px;
+        line-height: 1.6em;
+    }
+    .numerate {
+        width: 500px;
+        height: 350px;
+        flex-wrap: wrap;
+        align-content: stretch;
+        justify-content: space-between;
+    }
+    .service {
+        height: 2300px;
+    }
+    .service_title h1 {
+        width: 700px;
+        font-size: 40px;
+    }
+    .service_info {
+        height: 1900px;
+        flex-wrap: nowrap;
+    }
+    .job_offer {
+        align-items: center;
+        flex-direction: column;
+        height: 260px;
+        margin: 0 0 40px;
+    }
+    .text_job {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 190px;
+    }
+    .text_job p {
+        width: 400px;
+        text-align: center;
+    }
+    .photo_title h1 {
+        font-size: 40px;
+    }
+    .photo {
+        width: 600px;
+        height: 1200px;
+    }
+    .img_collage {
+        width: 300px;
+        height: 1700px;
+    }
+    .collage {
+        width: 300px;
+        height: 350px;
+    }
+    .collage_big {
+        width: 300px;
+        height: 400px;
+    }
+    .photo_div {
+        display: flex;
+        justify-content: center;
+        height: 1600px;
+    }
+    .img_collage {
+        height: 1200px;
+    }
+    .link {
+        width: 40px;
+        height: 40px;
+    }
+    .title_window h3 {
+        font-size: 13px;
+    }
+    .client_title h1 {
+        width: 700px;
+        font-size: 40px;
+    }
+    .logo_icon {
+        width: 80px;
+        height: 80px;
+    }
+    .logo {
+        width: 700px;
+    }
+    .client_info p {
+        width: 600px;
+        font-size: 18px;
+    }
+    .svg_outline {
+        top: 400px;
+        align-items: center;
+    }
+    .p_lorem {
+        width: 630px;
+    }
+    .title_us {
+        margin-top: 0px;
+        height: 200px;
+    }
+    .title_us h1 {
+        width: 650px;
+        font-size: 40px;
+    }
+    .outline_icon {
+        width: 30px;
+        height: 30px;
+    }
+    .email_blank {
+        width: 700px;
+        height: 1200px;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 400px;
+    }
+    .contact_info {
+        width: 700px;
+        height: 500px;
+        align-items: flex-start;
+        background-color: #1a1a1a8a;
+    }
+    .send_message {
+        width: 700px;
+        height: 700px;
+        background-color: #1a1a1a8a;
+    }
+    .center_text {
+        width: 180px;
+        height: 650px;
+        margin-left: 50px;
+    }
+    .email_icon {
+        width: 180px;
+        margin-left: 35px;
+    }
+    .email_submit {
+        width: 550px;
+    }
+    .input_blank,
+    textarea {
+        width: 550px;
+    }
+    .title_h {
+        justify-content: center;
+        width: 550px;
+    }
+    .contact_us {
+        height: 1600px;
+    }
+    footer {
+        height: 700px;
+    }
+    .footer_titry {
+        height: 600px;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .button_mail {
+        width: 570px;
+    }
+    .input_footer {
+        height: 50px;
+        width: 360px;
+    }
+    .input_footer input {
+        width: 300px;
+    }
+    .footer_button {
+        height: 50px;
+    }
+    .footer_text {
+        width: 510px;
+    }
+    .footer_text p {
+        width: 510px;
+    }
+    .line_block:nth-of-type(4) {
+        display: none;
+    }
+    .about_numerate {
+        margin-top: 80px;
+    }
+    .icon_job {
+        height: 60px;
+    }
+    .title_text h1 {
+        width: 600px;
+    }
+    .email_form {
+        align-items: center;
+    }
+}
+@media screen and (max-width:767px) and (min-width:350px) {
+    .nav_menu {
+        left: 70%;
+        font-size: 13px;
+        top: -2%;
+    }
+    .center_obj {
+        justify-content: space-between;
+    }
+    .glint_img {
+        width: 80px;
+        height: 50px;
+    }
+    .nav_arrow {
+        left: 87%;
+        bottom: 0%;
+    }
+    .welcome_window {
+        width: 480px;
+    }
+    .welcome_decor_text {
+        text-align: center;
+        width: 425px;
+        height: 760px;
+        margin: 0;
+        align-items: center;
+    }
+    .welcome_decor_text h1 {
+        font-size: 33px;
+        width: 370px;
+        height: 270px;
+        line-height: 1.3em;
+    }
+    .button_div {
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 350px;
+        height: 150px;
+        padding: 0;
+        margin-right: 0;
+    }
+    .hero_btn {
+        width: 300px;
+        padding: 0;
+        margin-right: 0;
+        margin: 0px;
+    }
+    .menu_contact[hidden] {
+        align-items: flex-start;
+        display: block;
+    }
+    .about_title h1 {
+        font-size: 50px;
+    }
+    .about_title {
+        margin-top: 50px;
+    }
+    .about {
+        height: 1600px;
+    }
+    .about_info p {
+        width: 335px;
+        height: 399px;
+        font-size: 19px;
+        line-height: 2em;
+        text-align: center;
+    }
+    .about_info {
+        width: 410px;
+        height: 330px;
+    }
+    .icon_job {
+        height: 80px;
+    }
+    .numerate {
+        width: 200px;
+        height: 780px;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+    .about_numerate {
+        width: 100%;
+        height: 850px;
+        align-items: flex-end;
+        margin-bottom: 30px;
+    }
+    .service {
+        height: 2300px;
+    }
+    .service_title {
+        height: 300px;
+    }
+    .service_title h1 {
+        width: 350px;
+        font-size: 33px;
+    }
+    .service_info {
+        flex-wrap: nowrap;
+    }
+    .job_offer {
+        align-items: center;
+        flex-direction: column;
+        height: 300px;
+        margin: 0 0 40px;
+        text-align: center;
+    }
+    .job_offer p {
+        width: 350px;
+    }
+    .text_job {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 190px;
+    }
+    .photo_title h1 {
+        font-size: 33px;
+        width: 400px;
+        height: 400px;
+    }
+    .photo_title {
+        justify-content: space-between;
+        height: 500px;
+    }
+    .title_text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 80px 0 100px;
+        height: 170px;
+    }
+    .title_text h1 {
+        width: 340px;
+    }
+    .photo {
+        width: 425px;
+        height: 1200px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        top: 300px;
+    }
+    .img_collage {
+        width: 350px;
+        height: 1700px;
+    }
+    .collage {
+        width: 350px;
+        height: 400px;
+    }
+    .collage_big {
+        width: 350px;
+        height: 500px;
+    }
+    .photo_div {
+        display: flex;
+        justify-content: center;
+        height: 3000px;
+    }
+    .img_collage {
+        width: 350px;
+        height: 1300px;
+    }
+    .link {
+        width: 40px;
+        height: 40px;
+    }
+    .title_window h3 {
+        font-size: 13px;
+    }
+    .client_div {
+        height: 1200px;
+    }
+    .client_title h1 {
+        font-size: 3em;
+        width: 340px;
+        font-size: 33px;
+    }
+    .client_name {
+        align-items: center;
+        margin: 220px 0 0;
+    }
+    .name_p {
+        font-size: 13px;
+    }
+    .client_logo {
+        height: 150px;
+    }
+    .logo_icon {
+        width: 30px;
+        height: 30px;
+    }
+    .logo {
+        width: 480px;
+        height: 70px;
+        justify-content: space-evenly;
+    }
+    .client_info p {
+        width: 340px;
+        height: 500px;
+        font-size: 20px;
+        margin-bottom: 100px;
+    }
+    .svg_outline {
+        top: 620px;
+        align-items: center;
+    }
+    .title_us {
+        margin-top: 0px;
+        height: 200px;
+        align-items: center;
+    }
+    .title_us h1 {
+        font-size: 33px;
+        width: 340px;
+    }
+    .outline_icon {
+        width: 30px;
+        height: 30px;
+    }
+    .email_blank {
+        width: 480px;
+        height: 1200px;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .contact_info {
+        width: 480px;
+        height: 500px;
+        background-color: #1a1a1a8a;
+        text-align: center;
+    }
+    .send_message {
+        width: 480px;
+        height: 700px;
+        background-color: #1a1a1a8a;
+    }
+    .center_text {
+        width: 200px;
+        height: 650px;
+    }
+    .email_icon {
+        width: 180px;
+        margin-left: 35px;
+    }
+    .email_submit {
+        width: 340px;
+    }
+    .submit_button {
+        justify-content: center;
+    }
+    .input_blank, textarea {
+        width: 340px;
+    }
+    .title_h {
+        justify-content: center;
+        width: 550px;
+    }
+    .title_h h3 {
+        font-size: 13px;
+    }
+    .contact_us {
+        height: 1600px;
+    }
+    footer {
+        height: 800px;
+    }
+    .footer_titry {
+        height: 600px;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .button_mail {
+        width: 480px;
+        height: 200px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .input_footer {
+        height: 50px;
+        width: 340px;
+    }
+    .input_footer input {
+        width: 330px;
+        text-align: center;
+    }
+    .footer_button {
+        width: 340px;
+        height: 50px;
+    }
+    .footer_text {
+        width: 425px;
+        align-items: center;
+        justify-content: center;
+        margin: 40px;
+    }
+    .footer_text p {
+        width: 330px;
+    }
+    .footer_text:nth-of-type(1) {
+        align-items: center;
+    }
+    .footer_text:nth-of-type(2) {
+        height: 290px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .line {
+        width: 250px;
+    }
+    .line_block {
+        width: 100%;
+        height: 1px;
+    }
+    .line_ {
+        width: 270px;
+    }
+    .copy_text {
+        flex-direction: column;
+        height: 60px;
+    }
+    .drop {
+        display: none;
+    }
+}
+@media screen and (max-width:325px) and (min-width:220px) {
+    .nav_menu {
+        left: 80%;
+        font-size: 13px;
+        top: -2%;
+    }
+    .center_obj {
+        justify-content: space-between;
+    }
+    .glint_img {
+        width: 80px;
+        height: 50px;
+    }
+    .nav_arrow {
+        left: 82%;
+        bottom: 0%;
+    }
+    .welcome_window {
+        width: 480px;
+    }
+    .welcome_decor_text {
+        text-align: center;
+        width: 325px;
+        height: 760px;
+        margin: 0;
+        align-items: center;
+    }
+    .welcome_decor_text h1 {
+        font-size: 30px;
+        width: 270px;
+        height: 270px;
+        line-height: 1.3em;
+    }
+    .button_div {
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 350px;
+        height: 150px;
+        padding: 0;
+        margin-right: 0;
+    }
+    .hero_btn {
+        width: 275px;
+        padding: 0;
+        margin-right: 0;
+        margin: 0px;
+    }
+    .menu_contact[hidden] {
+        align-items: flex-start;
+        display: block;
+    }
+    .about_title h1 {
+        font-size: 50px;
+    }
+    .about_title h3 {
+        font-size: 14px;
+    }
+    .about_title {
+        margin-top: 50px;
+    }
+    .about {
+        height: 1600px;
+    }
+    .about_info p {
+        width: 260px;
+        height: 399px;
+        font-size: 19px;
+        line-height: 1.5em;
+        text-align: center;
+    }
+    .about_info {
+        width: 410px;
+        height: 330px;
+    }
+    .icon_job {
+        height: 80px;
+    }
+    .numerate {
+        width: 200px;
+        height: 780px;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+    .numerate h1 {
+        font-size: 73px;
+    }
+    .about_numerate {
+        width: 100%;
+        height: 850px;
+        align-items: flex-end;
+        margin-bottom: 30px;
+    }
+    .service {
+        height: 2300px;
+    }
+    .service_title {
+        height: 300px;
+    }
+    .service_title h1 {
+        width: 270px;
+        font-size: 28px;
+    }
+    .service_info {
+        flex-wrap: nowrap;
+    }
+    .job_offer {
+        align-items: center;
+        flex-direction: column;
+        height: 300px;
+        margin: 0 0 40px;
+        text-align: center;
+    }
+    .job_offer p {
+        width: 270px;
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+    .text_job {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 190px;
+    }
+    .text_job h2 {
+        font-size: 23px;
+    }
+    .photo_title h1 {
+        font-size: 33px;
+        width: 400px;
+        height: 400px;
+    }
+    .photo_title {
+        justify-content: space-between;
+        height: 500px;
+    }
+    .title_text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 80px 0 100px;
+        height: 170px;
+    }
+    .title_text h1 {
+        width: 270px;
+        font-size: 28px;
+    }
+    .photo {
+        width: 320px;
+        height: 1200px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        top: 300px;
+    }
+    .img_collage {
+        width: 280px;
+        height: 1300px;
+    }
+    .collage {
+        width: 280px;
+        height: 300px;
+    }
+    .collage_big {
+        width: 280px;
+        height: 350px;
+    }
+    .photo_div {
+        display: flex;
+        justify-content: center;
+        height: 2300px;
+    }
+    .link {
+        width: 40px;
+        height: 40px;
+    }
+    .title_window h3 {
+        font-size: 13px;
+    }
+    .client_div {
+        height: 1200px;
+    }
+    .client_title h1 {
+        font-size: 3em;
+        width: 270px;
+        font-size: 28px;
+    }
+    .client_title h3 {
+        font-size: 14px;
+    }
+    .client_name {
+        align-items: center;
+        margin: 180px 0 0;
+    }
+    .name_p {
+        font-size: 13px;
+    }
+    .client_logo {
+        height: 150px;
+    }
+    .logo_icon {
+        width: 50px;
+        height: 50px;
+    }
+    .logo {
+        width: 480px;
+        height: 70px;
+        justify-content: space-evenly;
+    }
+    .client_info p {
+        width: 280px;
+        height: 500px;
+        font-size: 17px;
+        margin-bottom: 100px;
+    }
+    .svg_outline {
+        display: none;
+    }
+    .title_us {
+        margin-top: 0px;
+        height: 200px;
+        align-items: center;
+    }
+    .title_us h1 {
+        font-size: 28px;
+        width: 260px;
+    }
+    .title_us h3 {
+        font-size: 14px;
+    }
+    .outline_icon {
+        width: 30px;
+        height: 30px;
+    }
+    .email_blank {
+        width: 480px;
+        height: 1200px;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .contact_info {
+        width: 480px;
+        height: 700px;
+        background-color: #1a1a1a8a;
+        text-align: center;
+    }
+    .contact_info h3 {
+        display: none;
+    }
+    .send_message {
+        width: 480px;
+        height: 700px;
+        background-color: #1a1a1a8a;
+    }
+    .center_text {
+        justify-content: space-evenly;
+        width: 200px;
+        height: 500px;
+    }
+    .email_icon {
+        width: 180px;
+        margin-left: 35px;
+    }
+    .email_submit {
+        width: 280px;
+    }
+    .submit_button {
+        justify-content: center;
+    }
+    .input_blank, textarea {
+        width: 280px;
+    }
+    .title_h {
+        justify-content: center;
+        width: 550px;
+    }
+    .title_h h3 {
+        font-size: 13px;
+    }
+    .contact_us {
+        height: 1470px;
+    }
+    footer {
+        justify-content: space-between;
+        height: 950px;
+    }
+    .footer_titry {
+        height: 850px;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .button_mail {
+        width: 480px;
+        height: 200px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .input_footer {
+        height: 50px;
+    }
+    .input_footer input {
+        width: 280px;
+        text-align: center;
+    }
+    .footer_button {
+        width: 280px;
+        height: 50px;
+    }
+    .footer_text {
+        width: 320px;
+        align-items: center;
+        justify-content: center;
+        margin: 40px;
+    }
+    .footer_text p {
+        width: 280px;
+    }
+    .footer_text:nth-of-type(1) {
+        align-items: center;
+    }
+    .footer_text:nth-of-type(2) {
+        height: 290px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .line {
+        width: 250px;
+    }
+    .line_block {
+        width: 100%;
+        height: 1px;
+    }
+    .line_ {
+        width: 270px;
+    }
+    .copy_text {
+        flex-direction: column;
+        height: 60px;
+    }
+    .drop {
+        display: none;
+    }
+    .menu_p {
+        display: none;
+    }
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
